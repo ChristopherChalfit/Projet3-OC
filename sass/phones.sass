@@ -16,9 +16,13 @@
         align-items: center
         flex-shrink: 0
         flex-direction: column
-    
+        z-index: 1000
+        position: relative
+        
     .nav__bar
         width: 100%
+        z-index: 1000
+        position: relative
     .navbar__img
             display: flex
             justify-content: center
@@ -27,7 +31,7 @@
             padding: 14px 89px 13px 89px
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)
 
-    .nav__bar .location
+    .nav_bar .location
             display: flex
             width: 100%
             height: 50px
@@ -38,7 +42,7 @@
             border: 0
             text-align: center
             font-weight: 500
-
+            position: relative
     .home__page
         padding: 2rem
         text-align: center
@@ -53,4 +57,7 @@
             padding-bottom: 30px
         & .btn 
             @include button($background_grey-color)
-        
+    .fonctionnality
+        display: flex
+        flex-direction: column
+        padding: 32px
