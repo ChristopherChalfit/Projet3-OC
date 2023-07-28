@@ -86,4 +86,18 @@
     flex-direction: column;
     padding: 32px;
   }
+  .functionality h2 {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .functionality__step {
+    border: 0;
+    border-radius: 20px;
+    background: #F6F6F6;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=phones.css.map */
