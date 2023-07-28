@@ -1,0 +1,56 @@
+@import 'variables'
+@media (max-width: 769px)
+    *
+        font-family: 'Roboto', sans-serif
+
+    body
+        margin: 0px
+
+    .main__container
+        padding: 0px
+    
+    header
+        display: flex
+        width: 100%
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        flex-direction: column
+    
+    .nav__bar
+        width: 100%
+    .navbar__img
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 36px
+            padding: 14px 89px 13px 89px
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)
+
+    .nav__bar .location
+            display: flex
+            width: 100%
+            height: 50px
+            justify-content: center
+            align-items: center
+            gap: 17px
+            background-color: $input_grey-color
+            border: 0
+            text-align: center
+            font-weight: 500
+
+    .home__page
+        padding: 2rem
+        text-align: center
+        background-color: $background_grey-color
+        h2
+            font-weight: 700
+            margin: 0
+        p
+            margin: 0
+            padding: 0
+            font-weight: 300
+            padding-bottom: 30px
+        & .btn 
+            @include button($background_grey-color)
+        
