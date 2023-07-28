@@ -27,9 +27,12 @@ $background_grey-color:#F6F6F6
         text-decoration: none 
         color: inherit 
     
-@mixin choiceplat($color:#F6F6F6 )
+@mixin choiceplat($color:#F6F6F6, $shadow: false)
     border: 0
     border-radius: 20px
     background:$color
     padding: 24px 
     margin-bottom: 16px
+    @if $shadow == true
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15)
+    
