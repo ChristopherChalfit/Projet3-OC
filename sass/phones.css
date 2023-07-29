@@ -45,7 +45,7 @@
     position: relative;
   }
   .home__page {
-    padding: 2rem;
+    padding: 2rem 2rem 4.375rem 2rem;
     text-align: center;
     background-color: #F6F6F6;
   }
@@ -84,7 +84,7 @@
   .functionality {
     display: flex;
     flex-direction: column;
-    padding: 32px;
+    padding: 0rem 2rem;
   }
   .functionality h2 {
     font-family: Roboto;
@@ -98,7 +98,53 @@
     border-radius: 20px;
     background: #F6F6F6;
     padding: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    list-style: none;
+  }
+  .functionality__step::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: 2rem;
+  }
+  .functionality ul {
+    counter-reset: compteListe;
+    padding: 0 0 0 15px;
+  }
+  .restaurants {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
+  .restaurants .list__restaurants {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants .list__restaurants > div {
+    border: 0;
+    border-radius: 15px;
+    max-height: 251px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .restaurants .list__restaurants > div img {
+    width: 100%;
+    height: 231px;
+    border-radius: 15px 15px 0 0;
+  }
+  .restaurants .list__restaurants > div h2 {
+    font-size: 18px;
+    margin: 0;
   }
 }/*# sourceMappingURL=phones.css.map */

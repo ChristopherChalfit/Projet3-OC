@@ -44,7 +44,7 @@
             font-weight: 500
             position: relative
     .home__page
-        padding: 2rem
+        padding: 2rem 2rem 4.375rem 2rem
         text-align: center
         background-color: $background_grey-color
         h2
@@ -60,7 +60,7 @@
     .functionality
         display: flex
         flex-direction: column
-        padding: 32px
+        padding: 0rem 2rem
         h2
             font-family: Roboto
             font-size: 1.5rem
@@ -69,5 +69,39 @@
             line-height: normal
         &__step
             @include choiceplat($shadow: true)
+            list-style: none
+        &__step::before
+            counter-increment: compteListe 1 
+            content: counter(compteListe) " " 
+            background: #9356dc 
+            height: 1.5rem 
+            width: 1.5rem 
+            border-radius: 100px 
+            display: flex 
+            justify-content: center 
+            align-items: center 
+            color: #fff 
+            position: absolute 
+            left: 2rem
+        ul
+            counter-reset: compteListe
+            padding: 0 0 0 15px
             
-            
+    .restaurants
+        background-color: $background_grey-color
+        display: flex
+        flex-direction: column
+        padding: 0rem 2rem
+        .list__restaurants
+            gap:15px
+            display: flex
+            flex-direction: column
+        .list__restaurants > div
+            @include card__restaurant()
+            img
+                width: 100%
+                height: 231px
+                border-radius: 15px 15px 0 0
+            h2
+                font-size: 18px
+                margin: 0
