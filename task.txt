@@ -1,0 +1,10 @@
+Reste a faire
+	Version mobile :
+		Ajouter le coeur dans les cartes des hotels
+		modifier le code sass pour qu'il soit le plus optimiser
+		ajouter les animations
+		ajouter le loader
+	version tablette:
+		tout
+	version desktop:
+		tout

@@ -91,17 +91,75 @@
         background-color: $background_grey-color
         display: flex
         flex-direction: column
-        padding: 0rem 2rem
+        padding: 0rem 2rem 2rem
+        .restaurant__title
+                display: flex
+                justify-content: space-between
+                align-items: center
         .list__restaurants
             gap:15px
             display: flex
             flex-direction: column
-        .list__restaurants > div
+        .list__restaurants .card
             @include card__restaurant()
+            position: relative
             img
                 width: 100%
-                height: 231px
+                height: 175px
                 border-radius: 15px 15px 0 0
+                object-fit: cover
             h2
                 font-size: 18px
                 margin: 0
+            > a
+                color: inherit
+                text-decoration: none
+                display: flex
+                flex-direction: column
+            &__badge
+                background-color: #99e2d0
+                color: #1b6150
+                padding: .5rem
+                border-radius: .125rem
+                position: absolute
+                top: 1rem
+                right: .75rem
+            &__footer
+                padding: 1rem
+                position: relative
+                display: flex
+                align-items: center
+            &__content
+                position: relative
+                display: flex
+                flex-direction: column
+                flex:1
+    .footer
+        &__section
+            display: flex
+            flex-direction: column
+            background-color:#353535
+            color: #fff
+            padding: 1rem
+        &__article
+            display: flex
+            flex-direction: column
+        &__logo
+            font-family: Shrikhand,"cursive"
+            font-size: 1.2rem
+            margin: 0 0 1rem
+        &__lists
+            list-style: none
+            padding: 0
+            margin: 0
+            gap:7px
+            display: flex
+            flex-direction: column
+        &__link
+            text-decoration: none
+            color: #fff
+        &__icon
+            margin-right: .5rem
+            width: 1.2rem
+
+    

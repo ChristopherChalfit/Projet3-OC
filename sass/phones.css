@@ -124,27 +124,96 @@
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 2rem;
+  }
+  .restaurants .restaurant__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .restaurants .list__restaurants {
     gap: 15px;
     display: flex;
     flex-direction: column;
   }
-  .restaurants .list__restaurants > div {
+  .restaurants .list__restaurants .card {
     border: 0;
     border-radius: 15px;
     max-height: 251px;
     background-color: #fff;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
   }
-  .restaurants .list__restaurants > div img {
+  .restaurants .list__restaurants .card img {
     width: 100%;
-    height: 231px;
+    height: 175px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
   }
-  .restaurants .list__restaurants > div h2 {
+  .restaurants .list__restaurants .card h2 {
     font-size: 18px;
     margin: 0;
+  }
+  .restaurants .list__restaurants .card > a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants .list__restaurants .card__badge {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+  }
+  .restaurants .list__restaurants .card__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .restaurants .list__restaurants .card__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: #fff;
+    padding: 1rem;
+  }
+  .footer__article {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo {
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+  }
+  .footer__lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer__icon {
+    margin-right: 0.5rem;
+    width: 1.2rem;
   }
 }/*# sourceMappingURL=phones.css.map */
