@@ -1,0 +1,36 @@
+@import '../variable'
+.footer
+    &__section
+        background-color:#353535
+        color: #fff
+        padding: 1.375rem 1.5625rem
+    &__article
+        display: flex
+        flex-direction: column
+        margin-top: 38px
+        gap: 20px
+    &__logo
+        font-family: Shrikhand,"cursive"
+        font-size: 18px
+        margin: 0 0 1rem
+    &__lists
+        list-style: none
+        padding: 0
+        margin: 5px
+        gap: 20px
+        display: flex
+        flex-direction: column
+    &__link
+        text-decoration: none
+        color: #fff
+    &__icon
+        margin-right: .5rem
+        width: 1.2rem
+@media (min-width:1024px)
+    .footer
+        &__logo
+            margin: 0 0 1rem
+        &__article
+            flex-direction: row-reverse
+        &__lists
+            flex-direction: row

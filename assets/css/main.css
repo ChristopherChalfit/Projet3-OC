@@ -1,0 +1,195 @@
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes reveal {
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.functionality {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px;
+  padding: 0rem 2rem;
+}
+.functionality i {
+  margin-right: 22px;
+}
+.functionality h2 {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.functionality__step {
+  border: 0;
+  border-radius: 20px;
+  background: #F6F6F6;
+  padding: 24px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  position: relative;
+  list-style: none;
+  width: auto;
+}
+.functionality__step::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -0.7rem;
+}
+.functionality ol {
+  counter-reset: compteListe;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0rem 2rem 2rem;
+}
+.restaurants .restaurant__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .list__restaurants {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .list__restaurants .card {
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+.restaurants .list__restaurants .card img {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.restaurants .list__restaurants .card h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.restaurants .list__restaurants .card > a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .list__restaurants .card__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+.restaurants .list__restaurants .card__footer {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.restaurants .list__restaurants .card__footer .btn--heart {
+  flex: 1;
+}
+.restaurants .list__restaurants .card__footer .btn--heart .fa-heart {
+  font-size: 2rem;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+.restaurants .list__restaurants .card__footer .btn--heart .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+.restaurants .list__restaurants .card__footer .btn--heart .fa-solid:hover, .restaurants .list__restaurants .card__footer .btn--heart .fa-solid :focus {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.restaurants .list__restaurants .card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .functionality {
+    padding: 0rem;
+    margin: 0 180px;
+  }
+  .functionality__step {
+    width: 100%;
+  }
+  .functionality ol {
+    flex-direction: row;
+  }
+  .restaurants {
+    padding: 0 180px 30px;
+  }
+  .restaurants .list__restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 100px;
+  }
+  .restaurants .list__restaurants .card {
+    flex-basis: calc(50% - 50px);
+  }
+}
