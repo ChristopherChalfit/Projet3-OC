@@ -769,6 +769,8 @@ header {
   animation-fill-mode: both;
   transform: scale(0);
   max-width: 100%;
+  border: none;
+  text-align: left;
 }
 .menu .menu--items .card:hover {
   cursor: pointer;
@@ -827,6 +829,7 @@ header {
   top: 0;
   transform: translateX(60px);
   transition: 0.5s ease-in-out;
+  height: 100%;
 }
 .menu .fa-check-circle {
   transform: rotate(0deg);
