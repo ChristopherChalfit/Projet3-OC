@@ -107,9 +107,13 @@
   padding-right: 1.0625rem;
   padding-top: 2rem;
   flex-shrink: 0;
+  width: 50%;
 }
 .menu__heart {
   flex: 1;
+  flex: 0;
+  border: none;
+  background-color: transparent;
 }
 .menu__heart .fa-heart {
   font-size: 2rem;
