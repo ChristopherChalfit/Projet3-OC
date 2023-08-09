@@ -1,59 +1,62 @@
 @use "sass:math"
-@import 'variables'
-@media (max-width: 1024px)
-    .img_top
+@import '../main/variable'
+@for $i from 0 to 11
+    .delay-#{$i}
+        animation: itemAppear #{calc($i/10)}s
+.img__top
+    img
+        max-width: 100%
+        max-height: 32rem
         width: 100%
-        flex-direction: column
+        object-fit: cover
+.menu
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: auto
+    z-index: 1000
+    position: relative
+    background-color: $background_grey-color
+    border-top-left-radius: 0.9375rem
+    border-top-right-radius: 0.9375rem
+    margin-top: -4rem
+    gap: 2.5rem
+    max-width: 65.9375rem
+    &__title
+        @include fontSize(1.75rem)
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        padding-left: 1.0625rem
+        padding-right: 1.0625rem
+        padding-top: 2rem
+        flex-shrink: 0
+    &__heart
+        @include heart()
+        .fa-heart, .fa-solid
+            top:0
+            margin-left: 3.75rem
+            margin-top: 2.1875rem
+    &__header
         display: flex
-
-    .menu
-        display: flex
-        flex-direction: column
-        width: 100%
-        height: auto
-        z-index: 1000
-        position: relative
-        background-color: $background_grey-color
-        border-top-left-radius: 15px
-        border-top-right-radius: 15px
-        margin-top: -4rem
-        gap: 40px
-        max-width: 1055px
-        &__title
-            font-family: Shrikhand
-            font-size: 28px
-            font-style: normal
-            font-weight: 400
-            line-height: normal
-            padding-left: 17px
-            padding-right: 17px
-            padding-top: 32px
-            flex-shrink: 0
-        &__heart
-            @include heart()
-            .fa-heart, .fa-solid
-                top:0
-                margin-left: 60px
-                margin-top: 35px
-        &__header
-            display: flex
-            flex-direction: row
-        .btn
-            margin: auto
-            text-align: center
-            margin-bottom: 40px
+        flex-direction: row
+    .btn
+        margin: auto
+        text-align: center
+        margin-bottom: 2.5rem
+        @include button($background_grey-color)
     .menu__starters, .menu__dishes, .menu__desserts
         display: flex
         flex-direction: column
-        margin: 0 0 0 13px
-        gap: 12px
+        margin: 0 0 0 0.8125rem
+        gap: 0.75rem
     .menu--title
-            font-size: 16px
+            @include fontSize(1rem)
             font-style: normal
             font-weight: 300
             line-height: normal
             text-transform: uppercase
-            padding: 0 0 9px 0
+            padding: 0 0 0.5625rem 0
             white-space: nowrap
             text-overflow: ellipsis
             overflow: hidden
@@ -61,24 +64,23 @@
                 content: ""
                 width: 2.5rem
                 height: .25rem
-                background-color: #99e2d0
+                background-color: $tertiary-color
                 position: absolute
                 left: 0
                 display: flex
-                margin: 0 0 0 13px
+                margin: 0 0 0 0.8125rem
     .menu--items
-            margin-right: 14px
+            margin-right: 0.875rem
             display: flex
             flex-direction: column
-            gap: 14px
+            gap: 0.875rem
             .card
                 @include card__restaurant()
-                padding: 15px
+                padding: 0.9375rem
                 align-items: flex-end
                 display: flex
                 overflow: hidden
                 cursor: pointer
-                animation: itemAppear .6s
                 animation-timing-function: cubic-bezier(.5,1.58,.34,.82)
                 animation-fill-mode: both
                 transform: scale(0)
@@ -86,23 +88,22 @@
                 &:hover
                     cursor: pointer
                     .card__content--price
-                        margin-right: 60px
+                        margin-right: 3.75rem
                     .card__content--add
                         transform: translateX(0)
                     .fa-check-circle
                         transform: rotate(360deg)
                 h2
-                    font-size: 18px
+                    @include fontSize(1.125rem)
                     margin: 0
                     white-space: nowrap
                     text-overflow: ellipsis
                     overflow: hidden
                 .sub_title
                     overflow: hidden 
-                    color: #000 
+                    color: $black-color
                     text-overflow: ellipsis 
-                    font-family: Roboto 
-                    font-size: 15.043px
+                    @include fontSize(0.9402rem)
                     font-style: normal 
                     font-weight: 500 
                     line-height: normal  
@@ -124,11 +125,11 @@
                         margin-left:15px
                     &--add
                         position: absolute 
-                        background-color: #99e2d0 
-                        color: #fff 
-                        font-size: 20px 
-                        padding: 22.5px 20px 
-                        border-radius: 0 15px 15px 0 
+                        background-color: $tertiary-color 
+                        color: $white-color
+                        @include fontSize(1.25rem) 
+                        padding: 1.4063rem 1.25rem 
+                        border-radius: 0 0.9375rem 0.9375rem 0 
                         right: 0 
                         top: 0 
                         transform: translateX(60px) 
@@ -136,4 +137,11 @@
     .fa-check-circle
         transform: rotate(0deg)
         transition: .5s ease-in-out
-
+@media (min-width: 64rem)
+    .img__top
+        max-width: 100%
+        max-height: 32rem
+        width: 100%
+    .menu
+        width: auto
+        margin: -4rem auto 0 auto

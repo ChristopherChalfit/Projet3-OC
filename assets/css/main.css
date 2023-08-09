@@ -37,14 +37,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0px;
+  margin: 0rem;
   padding: 0rem 2rem;
 }
 .functionality i {
-  margin-right: 22px;
+  margin-right: 1.375rem;
 }
 .functionality h2 {
-  font-family: Roboto;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -65,10 +64,10 @@
 .functionality__step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
-  background: #9356dc;
+  background: #9356DC;
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +81,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 .restaurants {
@@ -98,7 +97,7 @@
   align-items: center;
 }
 .restaurants .list__restaurants {
-  gap: 15px;
+  gap: 0.9375rem;
   display: flex;
   flex-direction: column;
 }
@@ -113,12 +112,12 @@
 }
 .restaurants .list__restaurants .card img {
   width: 100%;
-  height: 175px;
-  border-radius: 15px 15px 0 0;
+  height: 10.9375rem;
+  border-radius: 0.9375rem 0.9375rem 0 0;
   object-fit: cover;
 }
 .restaurants .list__restaurants .card h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
 }
 .restaurants .list__restaurants .card > a {
@@ -128,7 +127,7 @@
   flex-direction: column;
 }
 .restaurants .list__restaurants .card__badge {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   padding: 0.5rem;
   border-radius: 0.125rem;
@@ -172,7 +171,7 @@
 @media (min-width: 1024px) {
   .functionality {
     padding: 0rem;
-    margin: 0 180px;
+    margin: 0 11.25rem;
   }
   .functionality__step {
     width: 100%;
@@ -181,15 +180,15 @@
     flex-direction: row;
   }
   .restaurants {
-    padding: 0 180px 30px;
+    padding: 0 11.25rem 1.875rem;
   }
   .restaurants .list__restaurants {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 50px;
-    column-gap: 100px;
+    row-gap: 3.125rem;
+    column-gap: 6.25rem;
   }
   .restaurants .list__restaurants .card {
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(50% - 3.125rem);
   }
 }

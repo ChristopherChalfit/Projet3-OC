@@ -1,4 +1,4 @@
-@import '../variable'
+@import '../main/variable'
 header
     display: flex
     width: 100%
@@ -11,9 +11,9 @@ header
     display: flex
     justify-content: center
     align-items: center
-    height: 36px
-    padding: 14px 89px 13px 89px
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)
+    height: 2.25rem
+    padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem
+    box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15)
 .nav__bar
     width: 100%
     z-index: 1000
@@ -28,15 +28,15 @@ header
     align-items: center
     justify-content: center
     transform: translateY(-50%)
-    font-size: 1.2rem
-    color: #000
+    @include fontSize(1.2rem)
+    color: $black-color
 .nav_bar .location
     display: flex
     width: 100%
     height: 50px
     justify-content: center
     align-items: center
-    gap: 17px
+    gap: 1.0625rem
     background-color: $input_grey-color
     border: 0
     text-align: center
@@ -48,7 +48,7 @@ header
     background-color: $background_grey-color
     display: flex
     flex-direction: column
-    gap: 19px
+    gap: 1.1875rem
     align-items: center
     h2
         font-weight: 700

@@ -33,18 +33,24 @@
     opacity: 1;
   }
 }
-svg {
-  font-family: "Raleway", sans-serif;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  animation: stroke 5s alternate;
+  animation: stroke 2s alternate;
   animation-fill-mode: both;
   stroke-width: 2;
   stroke: #9356DC;
   font-size: 70px;
-  position: absolute;
+  z-index: 10000;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes stroke {
@@ -76,7 +82,7 @@ svg {
   }
 }
 .wrapper {
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .loader {
@@ -98,12 +104,12 @@ svg {
   justify-content: space-between;
 }
 .loader__item {
-  height: 75px;
-  width: 75px;
-  border-radius: 50px;
+  height: 4.6875rem;
+  width: 4.6875rem;
+  border-radius: 3.125rem;
   animation: jump 1s;
   animation-iteration-count: 1;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   display: flex;
 }
 .loader__item--1 {
@@ -111,7 +117,7 @@ svg {
 }
 .loader__item .title {
   display: flex;
-  font-size: 25px;
+  font-size: 1.5625rem;
   position: relative;
   flex: 1;
   align-items: center;

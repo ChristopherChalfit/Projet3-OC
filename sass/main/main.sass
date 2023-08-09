@@ -1,15 +1,14 @@
-@import '../variable'
+@import '../main/variable'
 .functionality
     display: flex
     flex-direction: column
     position: relative
-    margin: 0px
+    margin: 0rem
     padding: 0rem 2rem
     i
-        margin-right: 22px
+        margin-right: 1.375rem
     h2
-        font-family: Roboto
-        font-size: 1.5rem
+        @include fontSize(1.5rem)
         font-style: normal
         font-weight: 700
         line-height: normal
@@ -20,14 +19,14 @@
     &__step::before
         counter-increment: compteListe 1 
         content: counter(compteListe) " " 
-        background: #9356dc 
+        background: $primary-color
         height: 1.5rem 
         width: 1.5rem 
-        border-radius: 100px 
+        border-radius: 6.25rem 
         display: flex 
         justify-content: center 
         align-items: center 
-        color: #fff 
+        color: $white-color
         position: absolute
         left: -.7rem
     ol
@@ -36,7 +35,7 @@
         display: flex
         flex-direction: column
         justify-content: center
-        gap: 25px
+        gap: 1.5625rem
 .restaurants
         background-color: $background_grey-color
         display: flex
@@ -48,7 +47,7 @@
                 justify-content: space-between
                 align-items: center
         .list__restaurants
-            gap:15px
+            gap: 0.9375rem
             display: flex
             flex-direction: column
         .list__restaurants .card
@@ -56,11 +55,11 @@
             position: relative
             img
                 width: 100%
-                height: 175px
-                border-radius: 15px 15px 0 0
+                height: 10.9375rem
+                border-radius: 0.9375rem 0.9375rem 0 0
                 object-fit: cover
             h2
-                font-size: 18px
+                @include fontSize(1.125rem)
                 margin: 0
             > a
                 color: inherit
@@ -68,8 +67,8 @@
                 display: flex
                 flex-direction: column
             &__badge
-                background-color: #99e2d0
-                color: #1b6150
+                background-color: $tertiary-color
+                color: $green-color
                 padding: .5rem
                 border-radius: .125rem
                 position: absolute
@@ -83,13 +82,13 @@
                 .btn--heart
                     flex: 1
                     .fa-heart
-                        font-size: 2rem
+                        @include fontSize(2rem)
                         position: absolute
                         right: 5%
                         top: 30%
                     .fa-solid
                         color: transparent
-                        background-image: linear-gradient(#9356DC, #FF79DA)
+                        background-image: linear-gradient($primary-color, $secondary-color)
                         -webkit-background-clip: text
                         background-clip: text
                         opacity: 0
@@ -104,17 +103,17 @@
 @media (min-width:1024px)
     .functionality
         padding: 0rem
-        margin: 0 180px
+        margin: 0 11.25rem
         &__step
             width: 100%
         ol
             flex-direction: row
     .restaurants
-        padding: 0 180px 30px
+        padding: 0 11.25rem 1.875rem
         .list__restaurants
             flex-direction: row
             flex-wrap: wrap
-            row-gap: 50px
-            column-gap: 100px
+            row-gap: 3.125rem
+            column-gap: 6.25rem
             .card
-                flex-basis: calc(50% - 50px)
+                flex-basis: calc(50% - 3.125rem)

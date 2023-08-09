@@ -41,19 +41,18 @@
 .footer__article {
   display: flex;
   flex-direction: column;
-  margin-top: 38px;
-  gap: 20px;
+  margin-top: 2.375rem;
+  gap: 1.25rem;
 }
 .footer__logo {
-  font-family: Shrikhand, "cursive";
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0 0 1rem;
 }
 .footer__lists {
   list-style: none;
   padding: 0;
-  margin: 5px;
-  gap: 20px;
+  margin: 0.3125rem;
+  gap: 1.25rem;
   display: flex;
   flex-direction: column;
 }
