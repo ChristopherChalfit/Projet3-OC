@@ -6,12 +6,6 @@
     transform: scale(1);
   }
 }
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -149,12 +143,6 @@ svg {
     transform: scale(1);
   }
 }
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -277,12 +265,6 @@ header {
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
   }
 }
 @keyframes jump {
@@ -487,12 +469,6 @@ header {
     transform: scale(1);
   }
 }
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -563,12 +539,6 @@ header {
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
   }
 }
 @keyframes jump {
@@ -863,12 +833,6 @@ header {
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
   }
 }
 @keyframes jump {
