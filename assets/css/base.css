@@ -431,7 +431,6 @@ header {
 .restaurants .list__restaurants .card .btn--heart .fa-heart {
   font-size: 2rem;
   position: absolute;
-  position: absolute;
   right: -5%;
   bottom: 0;
 }
@@ -894,7 +893,7 @@ body, html {
 }
 
 .main--container {
-  max-width: 90rem;
+  max-width: 1440px;
 }
 
 .font-roboto {
