@@ -442,7 +442,7 @@ header {
   opacity: 0;
   transition: all 0.7s ease-in-out;
 }
-.restaurants .list__restaurants .card .btn--heart .fa-solid:hover, .restaurants .list__restaurants .card .btn--heart .fa-solid :focus {
+.restaurants .list__restaurants .card .btn--heart .fa-solid:hover {
   opacity: 1;
   transform: scale(1.1);
 }
