@@ -66,7 +66,7 @@ p, h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  animation: stroke 2s alternate;
+  animation: stroke 4s alternate;
   animation-fill-mode: both;
   stroke-width: 2;
   stroke: #9356DC;
@@ -81,12 +81,11 @@ svg {
 
 @keyframes stroke {
   0% {
-    fill: rgba(153, 226, 208, 0.5);
+    fill: rgba(153, 226, 208, 0);
     stroke: rgb(147, 86, 220);
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
-    opacity: 1;
   }
   70% {
     fill: rgba(153, 226, 208, 0);
