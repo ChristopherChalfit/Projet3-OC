@@ -65,7 +65,7 @@ header {
   color: #000;
 }
 
-.nav_bar .location {
+.main__bar--location {
   display: flex;
   width: 100%;
   height: 50px;
