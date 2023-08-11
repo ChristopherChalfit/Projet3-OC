@@ -17,11 +17,11 @@
 }
 .functionality__step {
   border: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #F6F6F6;
-  padding: 24px;
-  margin-bottom: 25px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 1.5625rem;
+  box-shadow: 0rem 0.25rem 0.9375rem 0rem rgba(0, 0, 0, 0.15);
   display: flex;
   position: relative;
   list-style: none;

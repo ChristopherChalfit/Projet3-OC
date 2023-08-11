@@ -16,21 +16,18 @@
 </head>
 
 <body>
-    <section class="main__container">
+    <div class="main__container">
         <header>
-            <section class="nav__bar">
+            <div class="nav__bar">
                 <a href="../"><i class="fa-arrow-left fas header__arrow" aria-hidden="true"></i></a>
                 <div class="navbar__img">
                     <img src="../assets/images/logo/logo-ohmyfood.png" alt="Logo OhMyFood">
                 </div>
-            </section>
-            <section class="img__top">
+            </div>
+            <div class="img__top">
                 <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Logo OhMyFood">
-            </section>
+            </div>
         </header>
-        
-
-           
             <main class="menu">
                 <div class="menu__header">
                     <div class="menu__title font-shirkland">À la française</div>
@@ -44,7 +41,7 @@
                         Entrées
                     </div>
                     <div class="menu--items">
-                        <button class="delay-1 card">
+                        <div class="delay-1 card" role="button">
                             <div class="card__content">
                                 <h2>Tartare de poulpe acidulé</h2>
                                 <span class="sub_title">Aux zestes d'orange</span>
@@ -53,8 +50,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-2 card">
+                        </div>
+                        <div class="delay-2 card" role="button">
                             <div class="card__content">
                                 <h2>Velouté de légumes d'antan</h2>
                                 <span class="sub_title">Carotte, panais, topinambour</span>
@@ -63,8 +60,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-3 card">
+                        </div>
+                        <div class="delay-3 card" role="button">
                             <div class="card__content">
                                 <h2>Soupe à l'oignon</h2>
                                 <span class="sub_title">Revisitée</span>
@@ -73,7 +70,7 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </section>
                 <section class="menu__dishes">
@@ -81,7 +78,7 @@
                         Plats
                     </div>
                     <div class="menu--items">
-                        <button class="delay-4 card">
+                        <div class="delay-4 card" role="button">
                             <div class="card__content">
                                 <h2>Coquilles Saint-Jacques</h2>
                                 <span class="sub_title">Accompagnées d'une purée de panais</span>
@@ -90,8 +87,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-5 card">
+                        </div>
+                        <div class="delay-5 card" role="button">
                             <div class="card__content">
                                 <h2>Magret de canard</h2>
                                 <span class="sub_title">Et parmentier de pommes de terre</span>
@@ -100,8 +97,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-6 card">
+                        </div>
+                        <div class="delay-6 card" role="button">
                             <div class="card__content">
                                 <h2>Pigeonneau d’Ille-et-Vilaine</h2>
                                 <span class="sub_title">Sur son lit de gnocchis aux légumes</span>
@@ -110,7 +107,7 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </section>
                 <section class="menu__desserts">
@@ -118,7 +115,7 @@
                         Desserts
                     </div>
                     <div class="menu--items">
-                        <button class="delay-7 card">
+                        <div class="delay-7 card" role="button">
                             <div class="card__content">
                                 <h2>Pétales de violettes glacés</h2>
                                 <span class="sub_title">Et purée de noisettes</span>
@@ -127,8 +124,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-8 card">
+                        </div>
+                        <div class="delay-8 card" role="button">
                             <div class="card__content">
                                 <h2>Fondant au chocolat </h2>
                                 <span class="sub_title">Revisité</span>
@@ -137,8 +134,8 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
-                        <button class="delay-9 card">
+                        </div>
+                        <div class="delay-9 card" role="button">
                             <div class="card__content">
                                 <h2>Millefeuille croustillant</h2>
                                 <span class="sub_title">Myrtilles et pâte d’amande</span>
@@ -147,7 +144,7 @@
                             <div class="card__content--add">
                                 <span class="fas fa-check-circle" aria-hidden="true"></span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </section>
                 <a class="btn" href="#">Commander</a>
@@ -187,17 +184,3 @@
 </body>
 
 </html>
-<!----- Non demandé, mais possibilité de selectionné sa carte
-<script>
-const choice = document.querySelectorAll(".card");
- for (let i = 0; i < cbox.length; i++) {
-    choice[i].addEventListener("click", function() {
-        if ( choice[i].classList.contains('is-active')) {
-            choice[i].classList.remove('is-active');
-  } else {
-    choice[i].classList.add('is-active');
-  }
-     });
- }
-</script>
------->
