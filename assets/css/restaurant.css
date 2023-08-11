@@ -192,10 +192,7 @@
   width: 2.5rem;
   height: 0.25rem;
   background-color: #99E2D0;
-  position: absolute;
-  left: 0;
   display: flex;
-  margin: 0 0 0 0.8125rem;
 }
 .menu .menu--items {
   margin-right: 0.875rem;
@@ -295,5 +292,18 @@
   .menu {
     width: auto;
     margin: -4rem auto 0 auto;
+    padding: 0 210px;
+  }
+  .menu__heart {
+    position: absolute;
+    right: 33%;
+    margin: 0px;
+  }
+  .menu__heart .fa-heart {
+    margin: 0px;
+  }
+  .menu__header {
+    align-items: center;
+    justify-content: center;
   }
 }

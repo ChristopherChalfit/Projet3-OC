@@ -6,12 +6,6 @@
     transform: scale(1);
   }
 }
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -46,11 +40,11 @@
 }
 .footer__logo {
   font-size: 1.125rem;
-  margin: 0 0 1rem;
 }
 .footer__lists {
   list-style: none;
-  padding: 0;
+  padding: 0px;
+  padding-right: 60px;
   margin: 0.3125rem;
   gap: 1.25rem;
   display: flex;

@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0rem;
   padding: 0rem 2rem;
 }
 .functionality i {
@@ -92,6 +91,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1.75rem;
 }
 .restaurants .list__restaurants {
   gap: 0.9375rem;
@@ -181,7 +181,10 @@
 @media (min-width: 1024px) {
   .functionality {
     padding: 0rem;
-    margin: 0 11.25rem;
+    margin: 3.125rem 11.25rem;
+  }
+  .functionality h2 {
+    padding-bottom: 1.5625rem;
   }
   .functionality__step {
     width: 100%;
@@ -190,7 +193,7 @@
     flex-direction: row;
   }
   .restaurants {
-    padding: 0 11.25rem 1.875rem;
+    padding: 30px 11.25rem 1.875rem;
   }
   .restaurants .list__restaurants {
     flex-direction: row;
