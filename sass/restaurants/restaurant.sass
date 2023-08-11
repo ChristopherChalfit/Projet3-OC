@@ -1,15 +1,5 @@
 @use "sass:math"
 @import '../main/variable'
-@for $i from 0 to 11
-    .delay-#{$i}
-        animation: itemAppear #{calc($i/10)}s
-.img__top
-    width: 100%
-    img
-        max-width: 100%
-        max-height: 32rem
-        width: 100%
-        object-fit: cover
 .menu
     display: flex
     flex-direction: column
@@ -130,7 +120,7 @@
                         justify-content: flex-end
                         align-items: flex-end
                         transition:.5s ease-in-out 
-                        margin-left:15px
+                        margin-left:0.9375rem
                     &--add
                         position: absolute 
                         background-color: $tertiary-color 
@@ -140,7 +130,7 @@
                         border-radius: 0 0.9375rem 0.9375rem 0 
                         right: 0 
                         top: 0 
-                        transform: translateX(60px) 
+                        transform: translateX(3.75rem) 
                         transition: .5s ease-in-out 
                         height: 100%
     .fa-check-circle
@@ -151,20 +141,16 @@
 // transform: translateX(0)
 
 @media (min-width: 64rem)
-    .img__top
-        max-width: 100%
-        max-height: 32rem
-        width: 100%
     .menu
         width: auto
         margin: -4rem auto 0 auto
-        padding: 0 210px
+        padding: 0 13.125rem
         &__heart
             position: absolute
             right: 33%
-            margin: 0px
+            margin: 0rem
             .fa-heart
-                margin: 0px
+                margin: 0rem
         &__header
             align-items: center
             justify-content: center

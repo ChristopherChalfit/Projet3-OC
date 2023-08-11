@@ -1,35 +1,67 @@
-/* *Josh's Custom CSS Reset
- * *https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* Box sizing rules */
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 *::before, *::after {
   box-sizing: border-box;
 }
 
+/* Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list], ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img, picture {
   max-width: 100%;
+  display: block;
 }
 
+/* Inherit fonts for inputs and buttons */
 input, button, textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-
-#root, #__next {
-  isolation: isolate;
-}
-
 .wrapper {
   position: fixed;
   bottom: 0;
@@ -41,13 +73,57 @@ p, h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
   stroke-width: 2;
   stroke: #9356DC;
-  font-size: 70px;
+  font-size: 4.375rem;
   z-index: 10000;
 }
 
 svg {
   width: 100%;
   height: 100%;
+}
+
+.delay-0 {
+  animation: itemAppear 0s;
+}
+
+.delay-1 {
+  animation: itemAppear 0.1s;
+}
+
+.delay-2 {
+  animation: itemAppear 0.2s;
+}
+
+.delay-3 {
+  animation: itemAppear 0.3s;
+}
+
+.delay-4 {
+  animation: itemAppear 0.4s;
+}
+
+.delay-5 {
+  animation: itemAppear 0.5s;
+}
+
+.delay-6 {
+  animation: itemAppear 0.6s;
+}
+
+.delay-7 {
+  animation: itemAppear 0.7s;
+}
+
+.delay-8 {
+  animation: itemAppear 0.8s;
+}
+
+.delay-9 {
+  animation: itemAppear 0.9s;
+}
+
+.delay-10 {
+  animation: itemAppear 1s;
 }
 
 @keyframes stroke {
@@ -126,7 +202,7 @@ header {
 .main__bar--location {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   justify-content: center;
   align-items: center;
   gap: 1.0625rem;
@@ -149,37 +225,54 @@ header {
 .home__page h2 {
   font-weight: 700;
   margin: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .home__page p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .home__page .btn {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   font-size: 1.1rem;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   color: #fff;
   background-color: rgb(104, 104, 104);
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  max-width: 218px;
+  max-width: 13.625rem;
   max-width: none;
 }
 .home__page .btn:hover {
   background-color: #fff;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .home__page .btn a {
   text-decoration: none;
   color: inherit;
 }
 
+.img__top {
+  width: 100%;
+}
+.img__top img {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 64rem) {
+  .img__top {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+  }
+}
 .functionality {
   display: flex;
   flex-direction: column;
@@ -199,11 +292,11 @@ header {
 }
 .functionality__step {
   border: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #F6F6F6;
-  padding: 24px;
-  margin-bottom: 25px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 1.5625rem;
+  box-shadow: 0rem 0.25rem 0.9375rem 0rem rgba(0, 0, 0, 0.15);
   display: flex;
   position: relative;
   list-style: none;
@@ -293,8 +386,8 @@ header {
 }
 .restaurants .list__restaurants .card button {
   position: absolute;
-  bottom: 30px;
-  right: 35px;
+  bottom: 1.875rem;
+  right: 2.1875rem;
   background-color: transparent;
   border: none;
   width: 2rem;
@@ -331,7 +424,7 @@ header {
   flex-direction: column;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .functionality {
     padding: 0rem;
     margin: 3.125rem 11.25rem;
@@ -346,7 +439,7 @@ header {
     flex-direction: row;
   }
   .restaurants {
-    padding: 30px 11.25rem 1.875rem;
+    padding: 1.875rem 11.25rem 1.875rem;
   }
   .restaurants .list__restaurants {
     flex-direction: row;
@@ -374,8 +467,8 @@ header {
 }
 .footer__lists {
   list-style: none;
-  padding: 0px;
-  padding-right: 60px;
+  padding: 0rem;
+  padding-right: 3.75rem;
   margin: 0.3125rem;
   gap: 1.25rem;
   display: flex;
@@ -390,7 +483,7 @@ header {
   width: 1.2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .footer__logo {
     margin: 0 0 1rem;
   }
@@ -401,60 +494,6 @@ header {
     flex-direction: row;
   }
 }
-.delay-0 {
-  animation: itemAppear 0s;
-}
-
-.delay-1 {
-  animation: itemAppear 0.1s;
-}
-
-.delay-2 {
-  animation: itemAppear 0.2s;
-}
-
-.delay-3 {
-  animation: itemAppear 0.3s;
-}
-
-.delay-4 {
-  animation: itemAppear 0.4s;
-}
-
-.delay-5 {
-  animation: itemAppear 0.5s;
-}
-
-.delay-6 {
-  animation: itemAppear 0.6s;
-}
-
-.delay-7 {
-  animation: itemAppear 0.7s;
-}
-
-.delay-8 {
-  animation: itemAppear 0.8s;
-}
-
-.delay-9 {
-  animation: itemAppear 0.9s;
-}
-
-.delay-10 {
-  animation: itemAppear 1s;
-}
-
-.img__top {
-  width: 100%;
-}
-.img__top img {
-  max-width: 100%;
-  max-height: 32rem;
-  width: 100%;
-  object-fit: cover;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -526,19 +565,19 @@ header {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   font-size: 1.1rem;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   color: #fff;
   background-color: rgb(104, 104, 104);
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  max-width: 218px;
+  max-width: 13.625rem;
 }
 .menu .btn:hover {
   background-color: #fff;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .menu .btn a {
   text-decoration: none;
@@ -637,7 +676,7 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
   transition: 0.5s ease-in-out;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 .menu .menu--items .card__content--add {
   position: absolute;
@@ -648,7 +687,7 @@ header {
   border-radius: 0 0.9375rem 0.9375rem 0;
   right: 0;
   top: 0;
-  transform: translateX(60px);
+  transform: translateX(3.75rem);
   transition: 0.5s ease-in-out;
   height: 100%;
 }
@@ -658,23 +697,18 @@ header {
 }
 
 @media (min-width: 64rem) {
-  .img__top {
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-  }
   .menu {
     width: auto;
     margin: -4rem auto 0 auto;
-    padding: 0 210px;
+    padding: 0 13.125rem;
   }
   .menu__heart {
     position: absolute;
     right: 33%;
-    margin: 0px;
+    margin: 0rem;
   }
   .menu__heart .fa-heart {
-    margin: 0px;
+    margin: 0rem;
   }
   .menu__header {
     align-items: center;
@@ -682,12 +716,12 @@ header {
   }
 }
 body, html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   scroll-behavior: smooth;
 }
 
 .main--container {
-  max-width: 1440px;
+  max-width: 90rem;
 }
 
 .font-roboto {

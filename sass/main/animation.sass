@@ -10,12 +10,15 @@
   animation-fill-mode: both
   stroke-width: 2
   stroke: $primary-color
-  font-size: 70px
+  font-size: 4.375rem
   z-index: 10000
 svg
     width: 100%
     height: 100%
 
+@for $i from 0 to 11
+    .delay-#{$i}
+        animation: itemAppear #{calc($i/10)}s
 @keyframes stroke
   0%
     fill: rgba(153, 226, 208, 0)
