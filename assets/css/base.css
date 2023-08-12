@@ -119,7 +119,7 @@ input, button, textarea, select {
 .loader__item--1 .fa-solid {
   background-color: #9356DC;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #9356DC;
 }
 .loader__item--2 {
   animation-delay: 0.25s;
@@ -127,7 +127,7 @@ input, button, textarea, select {
 .loader__item--2 .fa-solid {
   background-color: #FF79DA;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #FF79DA;
 }
 .loader__item--3 {
   animation-delay: 0.5s;
@@ -135,7 +135,7 @@ input, button, textarea, select {
 .loader__item--3 .fa-solid {
   background-color: #99E2D0;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #99E2D0;
 }
 
 @keyframes loader {
