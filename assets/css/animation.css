@@ -44,6 +44,7 @@
   font-size: 3rem;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #d60;
+  animation-iteration-count: 1;
 }
 .loader__itemContainer {
   display: flex;
@@ -56,7 +57,7 @@
   -webkit-text-fill-color: #9356DC;
 }
 .loader__item--2 {
-  animation-delay: 0.2s;
+  animation-delay: 0.25s;
 }
 .loader__item--2 .fa-solid {
   background-color: #FF79DA;
@@ -64,7 +65,7 @@
   -webkit-text-fill-color: #FF79DA;
 }
 .loader__item--3 {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 .loader__item--3 .fa-solid {
   background-color: #99E2D0;
