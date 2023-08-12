@@ -29,13 +29,14 @@
   left: 0 
   top: -50px
   animation: loader 4s ease reverse forwards
-  z-index: 1 
+  z-index: 2600
   display: flex 
   align-items: center 
-  justify-content: center 
+  justify-content: center
+  background: rgba(255, 255, 255, 0.90)
   &__item   
     border-radius: 1rem 
-    animation: jump 4s 
+    animation: jump 1s 
     font-size: 3rem
     -webkit-text-stroke: 1px
     -webkit-text-stroke-color: #d60
@@ -53,13 +54,13 @@
         background-color: $secondary-color
         -webkit-background-clip: text
         -webkit-text-fill-color: $secondary-color
-      animation-delay: 0.5s 
+      animation-delay: 0.2s 
     &--3
       .fa-solid
         background-color: $tertiary-color
         -webkit-background-clip: text
         -webkit-text-fill-color: $tertiary-color
-      animation-delay: 1s 
+      animation-delay: 0.4s 
 
 @keyframes loader 
   0% 
@@ -71,15 +72,13 @@
 @keyframes jump 
   0% 
     transform: translateY(0)
-  
   25% 
-    transform: translateY(0.8rem)
-  
+    transform: translateY(-1.5rem)
   75% 
-    transform: translateY(-0.8rem)
-  
+    transform: translateY(-2rem)
   100% 
     transform: translateY(0)
+
 @for $i from 0 to 11
     .delay-#{$i}
         animation: itemAppear #{calc($i/10)}s
