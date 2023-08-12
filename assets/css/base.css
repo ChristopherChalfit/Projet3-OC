@@ -116,22 +116,26 @@ input, button, textarea, select {
   gap: 25px;
   justify-content: space-between;
 }
-.loader__item--1 {
-  background: #9356DC;
+.loader__item--1 .fa-solid {
+  background-color: #9356DC;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .loader__item--2 {
-  background: #FF79DA;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation-delay: 0.25s;
 }
-.loader__item--3 {
-  background: #99E2D0;
+.loader__item--2 .fa-solid {
+  background-color: #FF79DA;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.loader__item--3 {
   animation-delay: 0.5s;
+}
+.loader__item--3 .fa-solid {
+  background-color: #99E2D0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes loader {
