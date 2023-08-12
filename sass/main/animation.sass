@@ -28,15 +28,14 @@
   width: 100% 
   left: 0 
   top: -50px
-  animation: loader 4s ease 0s 1 reverse forwards
+  animation: loader 4s ease reverse forwards
   z-index: 1 
   display: flex 
   align-items: center 
   justify-content: center 
   &__item   
     border-radius: 1rem 
-    animation: jump 2s 
-    animation-iteration-count: 1 
+    animation: jump 4s 
     font-size: 3rem
     -webkit-text-stroke: 1px
     -webkit-text-stroke-color: #d60
@@ -65,8 +64,10 @@
 @keyframes loader 
   0% 
     opacity: 0
+    z-index: -10
   100% 
     opacity: 1
+    z-index: 200
 @keyframes jump 
   0% 
     transform: translateY(0)
@@ -88,7 +89,6 @@
     transform: scale(0)
   100%
     transform: scale(1)
-@-webkit-keyframes focus-in-contract
   0%
     letter-spacing: 1em
     -webkit-filter: blur(12px)
@@ -105,7 +105,7 @@
     -webkit-filter: blur(12px)
     filter: blur(12px)
     opacity: 0
-
+    z-index: -10
   100%
     -webkit-filter: blur(0px)
     filter: blur(0px)
