@@ -28,9 +28,7 @@
   width: 100% 
   left: 0 
   top: -50px
-  animation: loader 0.01s 
-  animation-delay: 3s
-  animation-fill-mode: both 
+  animation: loader 4s ease 0s 1 reverse forwards
   z-index: 1 
   display: flex 
   align-items: center 
@@ -56,18 +54,19 @@
         background-color: $secondary-color
         -webkit-background-clip: text
         -webkit-text-fill-color: $secondary-color
-      animation-delay: 0.25s 
+      animation-delay: 0.5s 
     &--3
       .fa-solid
         background-color: $tertiary-color
         -webkit-background-clip: text
         -webkit-text-fill-color: $tertiary-color
-      animation-delay: 0.5s 
+      animation-delay: 1s 
 
 @keyframes loader 
-  100% 
+  0% 
     opacity: 0
-    z-index: -10
+  100% 
+    opacity: 1
 @keyframes jump 
   0% 
     transform: translateY(0)
@@ -80,7 +79,6 @@
   
   100% 
     transform: translateY(0)
-
 @for $i from 0 to 11
     .delay-#{$i}
         animation: itemAppear #{calc($i/10)}s
@@ -90,9 +88,6 @@
     transform: scale(0)
   100%
     transform: scale(1)
-
-
-
 @-webkit-keyframes focus-in-contract
   0%
     letter-spacing: 1em
@@ -104,7 +99,6 @@
     -webkit-filter: blur(0px)
     filter: blur(0px)
     opacity: 1
-
 @keyframes focus-in-contract
   0%
     letter-spacing: 1em

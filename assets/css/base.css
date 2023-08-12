@@ -95,9 +95,7 @@ input, button, textarea, select {
   width: 100%;
   left: 0;
   top: -50px;
-  animation: loader 0.01s;
-  animation-delay: 3s;
-  animation-fill-mode: both;
+  animation: loader 4s ease 0s 1 reverse forwards;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -122,7 +120,7 @@ input, button, textarea, select {
   -webkit-text-fill-color: #9356DC;
 }
 .loader__item--2 {
-  animation-delay: 0.25s;
+  animation-delay: 0.5s;
 }
 .loader__item--2 .fa-solid {
   background-color: #FF79DA;
@@ -130,7 +128,7 @@ input, button, textarea, select {
   -webkit-text-fill-color: #FF79DA;
 }
 .loader__item--3 {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .loader__item--3 .fa-solid {
   background-color: #99E2D0;
@@ -139,9 +137,11 @@ input, button, textarea, select {
 }
 
 @keyframes loader {
-  100% {
+  0% {
     opacity: 0;
-    z-index: -10;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes jump {
