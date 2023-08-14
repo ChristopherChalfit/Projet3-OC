@@ -67,11 +67,11 @@ input, button, textarea, select {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 50px;
+  top: 3.125rem;
   width: 100%;
   height: 100%;
-  z-index: 2500;
-  animation: focus-in-contract 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  z-index: 2800;
+  animation: focus-in-contract 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
   background: #9356DC;
   background: radial-gradient(circle farthest-corner at bottom center, #9356DC 0%, #FF79DA 28%, #99E2D0 100%);
   -webkit-background-clip: text;
@@ -211,17 +211,6 @@ input, button, textarea, select {
   }
   100% {
     transform: scale(1);
-  }
-  0% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
   }
 }
 @keyframes focus-in-contract {
@@ -461,7 +450,7 @@ header {
 }
 .restaurants .list__restaurants .card button {
   position: absolute;
-  bottom: 1.875rem;
+  bottom: 2.1875rem;
   right: 2.1875rem;
   background-color: transparent;
   border: none;
@@ -472,14 +461,14 @@ header {
 .restaurants .list__restaurants .card .btn--heart {
   flex: 1;
 }
+.restaurants .list__restaurants .card .btn--heart .fa-regular {
+  color: #000;
+}
 .restaurants .list__restaurants .card .btn--heart .fa-heart {
   font-size: 2rem;
   position: absolute;
-  right: -5%;
-  bottom: 0;
-}
-.restaurants .list__restaurants .card .btn--heart .fa-regular {
-  color: #000;
+  right: 0%;
+  top: 10%;
 }
 .restaurants .list__restaurants .card .btn--heart .fa-solid {
   color: transparent;
@@ -489,7 +478,7 @@ header {
   opacity: 0;
   transition: all 0.7s ease-in-out;
 }
-.restaurants .list__restaurants .card .btn--heart .fa-solid:hover {
+.restaurants .list__restaurants .card .btn--heart .fa-solid:hover, .restaurants .list__restaurants .card .btn--heart .fa-solid :focus {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -598,15 +587,17 @@ header {
 }
 .menu__heart {
   flex: 1;
-  flex: 0;
   border: none;
   background-color: transparent;
+}
+.menu__heart .fa-regular {
+  color: #000;
 }
 .menu__heart .fa-heart {
   font-size: 2rem;
   position: absolute;
-  right: 5%;
-  top: 30%;
+  right: 0%;
+  top: 10%;
 }
 .menu__heart .fa-solid {
   color: transparent;
@@ -625,6 +616,7 @@ header {
 }
 .menu__heart .fa-heart, .menu__heart .fa-solid {
   top: 0;
+  right: 5%;
   margin-left: 3.75rem;
   margin-top: 2.1875rem;
 }

@@ -27,15 +27,17 @@
 }
 .menu__heart {
   flex: 1;
-  flex: 0;
   border: none;
   background-color: transparent;
+}
+.menu__heart .fa-regular {
+  color: #000;
 }
 .menu__heart .fa-heart {
   font-size: 2rem;
   position: absolute;
-  right: 5%;
-  top: 30%;
+  right: 0%;
+  top: 10%;
 }
 .menu__heart .fa-solid {
   color: transparent;
@@ -54,6 +56,7 @@
 }
 .menu__heart .fa-heart, .menu__heart .fa-solid {
   top: 0;
+  right: 5%;
   margin-left: 3.75rem;
   margin-top: 2.1875rem;
 }

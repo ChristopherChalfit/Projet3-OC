@@ -111,7 +111,7 @@
 }
 .restaurants .list__restaurants .card button {
   position: absolute;
-  bottom: 1.875rem;
+  bottom: 2.1875rem;
   right: 2.1875rem;
   background-color: transparent;
   border: none;
@@ -122,14 +122,14 @@
 .restaurants .list__restaurants .card .btn--heart {
   flex: 1;
 }
+.restaurants .list__restaurants .card .btn--heart .fa-regular {
+  color: #000;
+}
 .restaurants .list__restaurants .card .btn--heart .fa-heart {
   font-size: 2rem;
   position: absolute;
-  right: -5%;
-  bottom: 0;
-}
-.restaurants .list__restaurants .card .btn--heart .fa-regular {
-  color: #000;
+  right: 0%;
+  top: 10%;
 }
 .restaurants .list__restaurants .card .btn--heart .fa-solid {
   color: transparent;
@@ -139,7 +139,7 @@
   opacity: 0;
   transition: all 0.7s ease-in-out;
 }
-.restaurants .list__restaurants .card .btn--heart .fa-solid:hover {
+.restaurants .list__restaurants .card .btn--heart .fa-solid:hover, .restaurants .list__restaurants .card .btn--heart .fa-solid :focus {
   opacity: 1;
   transform: scale(1.1);
 }
