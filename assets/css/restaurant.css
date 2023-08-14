@@ -51,9 +51,6 @@
   opacity: 1;
   transform: scale(1.1);
 }
-.menu__heart .fa-regular {
-  color: #000;
-}
 .menu__heart .fa-heart, .menu__heart .fa-solid {
   top: 0;
   right: 5%;
