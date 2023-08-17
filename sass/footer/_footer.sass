@@ -1,0 +1,36 @@
+@import '../utils/variable'
+@import '../utils/mixin'
+.footer
+    &__section
+        background-color:$dark-grey-color
+        color: $white-color
+        padding: 1.375rem 1.5625rem
+    &__article
+        display: flex
+        flex-direction: column
+        margin-top: 2.375rem
+        gap: 1.25rem
+    &__logo
+        @include fontSize(1.125rem)
+    &__lists
+        list-style: none
+        padding: 0rem
+        padding-right: 3.75rem
+        margin: 0.3125rem
+        gap: 1.25rem
+        display: flex
+        flex-direction: column
+    &__link
+        text-decoration: none
+        color: $white-color
+    &__icon
+        margin-right: .5rem
+        width: 1.2rem
+@media (min-width: 64rem)
+    .footer
+        &__logo
+            margin: 0 0 1rem
+        &__article
+            flex-direction: row-reverse
+        &__lists
+            flex-direction: row

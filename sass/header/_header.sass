@@ -1,0 +1,75 @@
+@import '../utils/variable'
+@import '../utils/mixin'
+header
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    z-index: 100
+    position: relative
+    
+.navbar__img
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem
+    box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15)
+.nav__bar
+    width: 100%
+    z-index: 1000
+    position: relative
+.header__arrow
+    position: absolute
+    left: 2rem
+    height: 2rem
+    width: 2rem
+    top: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateY(-50%)
+    @include fontSize(1.2rem)
+    color: $black-color
+.main__bar
+    &--location
+        display: flex
+        width: 100%
+        height: 3.125rem
+        justify-content: center
+        align-items: center
+        gap: 1.0625rem
+        background-color: $input_grey-color
+        border: 0
+        text-align: center
+        font-weight: 500
+        position: relative
+.home__page
+    padding: 2rem 2rem 4.375rem 2rem
+    text-align: center
+    background-color: $background_grey-color
+    display: flex
+    flex-direction: column
+    gap: 1.1875rem
+    align-items: center
+    h2
+        font-weight: 700
+        margin: 0
+        font-size: 2.5rem
+    p
+        font-weight: 300
+        font-size: 1.125rem
+    .btn
+        @include button()
+        max-width: none
+// Restaurants
+.img__top
+    width: 100%
+    img
+        max-width: 100%
+        max-height: 32rem
+        width: 100%
+        object-fit: cover
+@media (min-width: 64rem)
+    .img__top
+        max-width: 100%
