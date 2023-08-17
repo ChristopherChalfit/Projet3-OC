@@ -1,3 +1,0 @@
-TODOLIST :
-	Remettre au propre le code
-
