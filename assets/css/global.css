@@ -62,7 +62,7 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
-.wrapper .focus-in-contract {
+.wrapper .loader--txt {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -71,7 +71,7 @@ input, button, textarea, select {
   width: 100%;
   height: 100%;
   z-index: 2800;
-  animation: focus-in-contract 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  animation: loader--txt 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
   background: #9356DC;
   background: radial-gradient(circle farthest-corner at bottom center, #9356DC 0%, #FF79DA 28%, #99E2D0 100%);
   -webkit-background-clip: text;
@@ -84,7 +84,7 @@ input, button, textarea, select {
   -webkit-text-stroke-color: black;
 }
 @media (min-width: 64rem) {
-  .wrapper .focus-in-contract {
+  .wrapper .loader--txt {
     font-size: 4.375rem;
   }
 }
@@ -213,7 +213,7 @@ input, button, textarea, select {
     transform: scale(1);
   }
 }
-@keyframes focus-in-contract {
+@keyframes loader--txt {
   0% {
     letter-spacing: 1em;
     -webkit-filter: blur(12px);
